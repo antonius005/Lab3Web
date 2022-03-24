@@ -201,7 +201,7 @@ buat dokumen html dengan isi berikut :
 lalu buka pada browser untuk melihat hasilnya :
 ![menggabungkan cell data](https://user-images.githubusercontent.com/101562285/159892696-e6fb25e5-47b3-483a-9cee-0db05baa26f3.png)
 
-## LANGKAH 4
+## LANGKAH 5
    --- Membuat Form ---
 buat dokumen html dengan isi berikut :
 ![vc membuat tabel new](https://user-images.githubusercontent.com/101562285/159893945-587a6eb9-4112-4e5c-9761-ea17444748f3.png)
@@ -243,7 +243,7 @@ buat dokumen html dengan isi berikut :
 lalu buka pada browser untuk melihat hasilnya :
 ![Membuat Form](https://user-images.githubusercontent.com/101562285/159894015-660ab790-857b-478d-838f-2132b7856b56.png)
 
-## LANGKAH 5
+## LANGKAH 6
    --- Menambahkan  Style Pada Form ---
 buat dokumen html dengan isi berikut :
 ![vc Membuat Form Akhir](https://user-images.githubusercontent.com/101562285/159894570-93c89357-ee7e-496f-99d0-5535304ce1c2.png)
@@ -267,3 +267,58 @@ padding: 5px 15px;
 ```
 lalu buka pada browser untuk melihat hasilnya :
 ![Membuat Form Akhir](https://user-images.githubusercontent.com/101562285/159894550-fc3ecdb7-96ee-46ac-9414-b42897df7765.png)
+
+# Pertanyaan dan Tugas
+### 1.Buatlah Form yang Menampilkan Dropdown menu dan Listbox dengan Multiple Selection
+--- Menampilkan Dropdown menu dan Listbox dengan Multiple Selection ---
+buat dokumen html dengan isi berikut :
+![vc pertanyaan 1](https://user-images.githubusercontent.com/101562285/159898352-83c2f9d9-4299-4e7d-8356-e9b38114daf5.png)
+```
+<!doctype html>
+    <html>
+        <head>
+            <title>Cara Membuat Multiple Select Di Satu Tag Select</title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+        </head>
+        <body style="background: lightblue">
+            <div style="width: 500px; padding: 15px; margin:200px auto;">
+                <div class="form-group">
+                   <h1>Membuat Multiple Select</h1>
+                    <h2>Paket Belajar</h2>
+                    <label>Antonius_School</label>
+                    <select id="paket" name="paket[]" class="form-control" multiple="multiple">
+
+                        <option value=""></option>
+
+                        <option value="Web Master">Web Master</option>
+
+                        <option value="Web Programming">Web Programming</option>
+
+                        <option value="Web Design">Web Design</option>
+
+                        <option value="Digital Marketing">Digital Marketing</option>
+
+                        <option value="Coding For Kids">Coding For Kids</option>
+
+                        <option value="Grafic Desain">Grafic Desain</option>
+
+                        <option value="Motion Grafic">Motion Grafic</option>
+                    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#paket").select2({
+                placeholder: "Silahkan Pilih"
+            });
+        });
+    </script>
+                    </select>
+                </div>
+            </div>
+    </body>
+    </html>
+```
+lalu buka pada browser untuk melihat hasilnya :
+![pertanyaan 1](https://user-images.githubusercontent.com/101562285/159898340-7ab044c0-3964-4da5-9425-16d71ba55108.png)
